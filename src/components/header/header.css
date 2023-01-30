@@ -1,8 +1,3 @@
-/*@font-face {
-    font-family: Average;
-    src: url('police/AverageSans-Regular.ttf');
-}*/
-
 nav { /*fixation du menu nav*/
     z-index: 1;
     position: fixed;
@@ -16,12 +11,18 @@ nav { /*fixation du menu nav*/
     flex-direction: column;
 }
 
-.contbout
- { /*menu-conteneur du logo*/
+#main > div:nth-child(1) { /*menu-conteneur du logo*/
     display: flex;
     justify-content: center;
     background-color: #93d393;
     padding-top: 20px;
+}
+
+#main > div:nth-child(2) { /*conteneur des boutons*/
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #93d393;
+    padding-bottom: 10px;    
 }
 
 .boutonMenu { /*menu-div du lien bouton menu (corps du bouton)*/
@@ -29,7 +30,7 @@ nav { /*fixation du menu nav*/
     justify-content: center;
     align-items: center;
     border-radius: 7px; 
-    width: 250px;
+    width: 270px;
     height: 50px;   
 }
 
@@ -46,9 +47,50 @@ nav { /*fixation du menu nav*/
     text-decoration: none;
 }
 
-.contbout2 { /*conteneur des boutons*/
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #93d393;
-    padding-bottom: 10px;
+/*----------Menus déroulant--------------------------*/
+#main > div:nth-child(2) > div:first-child { /*hébergement classique en pos relative*/
+    position: relative;
 }
+
+.menuderclass { /*sous-menu hébergement classique*/
+    width: 250px;
+    position: absolute;
+    border-radius: 20px 0 20px 0;
+    top:50px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    visibility: hidden;
+    -webkit-border-radius: 20px 0 20px 0;
+    -moz-border-radius: 20px 0 20px 0;
+    -ms-border-radius: 20px 0 20px 0;
+    -o-border-radius: 20px 0 20px 0;
+}
+
+#main > div:nth-child(2) > div:nth-child(2) { /*hébergement insolite en pos relative*/
+    position: relative;
+}
+
+.menuderinsol { /*sous-menu hébergement insolite*/
+    width: 250px;
+    position: absolute;
+    border-radius: 20px 0 20px 0;
+    top:50px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    visibility: hidden;
+    -webkit-border-radius: 20px 0 20px 0;
+    -moz-border-radius: 20px 0 20px 0;
+    -ms-border-radius: 20px 0 20px 0;
+    -o-border-radius: 20px 0 20px 0;
+}
+
+
+
+
+/*border: 2px red solid;*/

@@ -1,0 +1,77 @@
+footer { /*A supprimer */
+    position: relative;
+    top: 200px;
+}
+
+
+#contfoot { /*Conteneur footer*/
+    background-color: #769976;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+li a { /*Liens mentions*/
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover { /*Liens mentions*/
+    color: white;
+}
+
+.entet { /* Formatage texte Mentions*/
+    font-size: 26px;
+}
+
+#mentions { /*Conteneur mentions*/
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#coord > li:first-of-type { /*logo adresse*/
+    list-style: url("../../../public/media/panneau.png");
+}
+
+#coord > li:nth-of-type(2) { /*logo téléphone*/
+    list-style: url("../../../public/media/tel.png");
+}
+
+#coordonnees { /*Coordonnées*/
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#resosoc { /*Réseaux sociaux*/
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resosoc a img:hover {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+#partenaire { /*Vignette partenaire*/
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    font-size: 20px;
+    background-color: #769976;
+    padding-bottom: 40px;
+    padding-top: 30px;   
+}
+
+#part:hover {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
